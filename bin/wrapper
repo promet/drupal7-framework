@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+	
+	if(!file_exists('cnf/config.yml')) {
+		copy('cnf/config.yml.dist', 'cnf/config.yml');
+		echo "File config.yml copied to cnf directory\n\n";
+	}
+	$path = __DIR__ . "/../";
+	exec($path . "vendor/bin/settings_compile cnf/config.yml cnf/settings.php");
+	

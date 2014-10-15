@@ -1,0 +1,10 @@
+name = wysiwyg_full_profile
+core = 7.x
+package = Promet Defaults
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg
+features[features_api][] = api:2
+features[filter][] = full_html
+features[wysiwyg][] = full_html
+project path = sites/all/modules/custom/features

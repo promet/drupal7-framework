@@ -1,0 +1,13 @@
+drupal:
+    settings:
+        db_url: "mysql://root:pass@localhost/default"
+        databases:
+            default:
+                default:
+                    database: default
+                    username: default
+                    password: default
+                    driver: mysql
+                    host: localhost
+    include:
+        require_once: [%DRUPAL_ROOT . '/sites/default/vendor/autoload.php']

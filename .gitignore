@@ -1,0 +1,13 @@
+cnf/config.yml
+cnf/settings.php
+www
+vendor
+.env
+
+# Ignore Vagrant box
+.vagrant/
+
+.DS_Store
+.bundle
+.ruby-version
+.sass-cache

@@ -1,0 +1,21 @@
+name = "Default D7"
+description = "Top module for default d7 project"
+package = "Default D7"
+core = "7.x"
+
+dependencies[] = admin_menu
+dependencies[] = block
+dependencies[] = ctools
+dependencies[] = date
+dependencies[] = drop_ship
+dependencies[] = entityform
+dependencies[] = features
+dependencies[] = feeds
+dependencies[] = kw_manifests
+dependencies[] = module_filter
+dependencies[] = registry_rebuild
+dependencies[] = rules
+dependencies[] = strongarm
+dependencies[] = views
+dependencies[] = wysiwyg_filtered_profile
+dependencies[] = wysiwyg_full_profile
