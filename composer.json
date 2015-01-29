@@ -6,6 +6,10 @@
             "type": "composer",
             "url": "http://static.drupal-packagist.org/v0.2.0"
         },
+	{
+            "type": "composer",
+            "url": "http://static.drupal-packagist.org/v0.2.1"
+        },
         {
             "type": "vcs",
             "url": "git@github.com:promet/drop_ship"
