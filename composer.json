@@ -6,7 +6,7 @@
             "type": "composer",
             "url": "http://static.drupal-packagist.org/v0.2.1"
         },
-        {
+	{
             "type": "composer",
             "url": "http://static.drupal-packagist.org/v0.2.0"
         },
