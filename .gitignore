@@ -11,3 +11,5 @@ vendor
 .bundle
 .ruby-version
 .sass-cache
+.iml
+.idea
