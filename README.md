@@ -15,7 +15,7 @@ which will trigger additional scripts to create a working Drupal root in the www
 subdirectory from the packages downloaded with composer.
 
 We reference a custom composer repository in composer.json
-[here](blob/master/composer.json#L5-8). This repository was created by
+[here](composer.json#L5-8). This repository was created by
 traversing the list of known projects on drupal.org using
 `drupal/parse-composer`, and has the package metadata for all the valid packages
 with a Drupal 7 release, including Drupal itself.
