@@ -15,7 +15,7 @@ which will trigger additional scripts to create a working Drupal root in the www
 subdirectory from the packages downloaded with composer.
 
 We reference a custom composer repository in composer.json
-[here](blob/master/composer.json#L5-8). This repository was created by
+[here](composer.json#L5-8). This repository was created by
 traversing the list of known projects on drupal.org using
 `drupal/parse-composer`, and has the package metadata for all the valid packages
 with a Drupal 7 release, including Drupal itself.
@@ -46,15 +46,15 @@ better ideas, and then added more good ideas.
 
 See:
 
-* [composer](getcomposer.org)
+* [composer](https://getcomposer.org)
   * [composer install](https://getcomposer.org/doc/03-cli.md#install)
   * [composer update](https://getcomposer.org/doc/03-cli.md#update)
   * [composer create-project](https://getcomposer.org/doc/03-cli.md#create-project)
   * [composer scripts](https://getcomposer.org/doc/articles/scripts.md)
-* [drupal/tangler](packagist.org/packages/drupal/tangler)
-* [drupal/drupal-library-installer-plugin](packagist.org/packages/drupal/drupal-library-installer-plugin)
-* [drupal/parse-composer](packagist.org/packages/drupal/parse-composer)
-* [winmillwill/settings_compile](packagist.org/packages/winmillwill/settings_compile)
+* [drupal/tangler](https://packagist.org/packages/drupal/tangler)
+* [drupal/drupal-library-installer-plugin](https://packagist.org/packages/drupal/drupal-library-installer-plugin)
+* [drupal/parse-composer](https://packagist.org/packages/drupal/parse-composer)
+* [winmillwill/settings_compile](https://packagist.org/packages/winmillwill/settings_compile)
 
 # Easy Development with Vagrant
 
@@ -123,8 +123,8 @@ embed your whole project in another project that uses this workflow.
 
 See:
 
-* [drupal/drop_ship](github.com/promet/drop_ship)
-* [drupal/kw_manifests](github.com/promet/kw_manifests)
+* [drupal/drop_ship](https://github.com/promet/drop_ship)
+* [drupal/kw_manifests](https://github.com/promet/kw_manifests)
 
 # TODO
 
