@@ -13,7 +13,6 @@ dependencies[] = features
 dependencies[] = feeds
 dependencies[] = kw_manifests
 dependencies[] = module_filter
-dependencies[] = registry_rebuild
 dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = views
