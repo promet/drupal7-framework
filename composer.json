@@ -1,14 +1,63 @@
 {
     "minimum-stability": "alpha",
     "name": "promet/drupal7-framework",
+    "type": "project",
     "repositories": [
         {
-            "type": "composer",
-            "url": "http://static.drupal-packagist.org/v0.2.1"
+            "type":"package",
+            "package": {
+                "name":"drupal\/coder",
+                "description":"Coder is a library and a module to review Drupal code.",
+                "keywords":[
+                    "standards",
+                    "phpcs",
+                    "code review"
+                ],
+                "homepage":"https:\/\/drupal.org\/project\/coder",
+                "version":"7.2.4",
+                "version_normalized":"7.2.4.0",
+                "license":[
+                    "GPL-2.0+"
+                ],
+                "authors":[],
+                "source":{
+                    "type":"git",
+                    "url":"http:\/\/git.drupal.org\/project\/coder.git",
+                    "reference":"5d36c5d737114e0812653401d245dd69d586fc0a"
+                },
+                "dist":{
+                    "type":"zip",
+                    "url":"http:\/\/ftp.drupal.org\/files\/projects\/coder-7.x-2.4.zip",
+                    "reference":null,
+                    "shasum":null
+                },
+                "type":"drupal-module",
+                "time":"2015-01-14T23:19:28+00:00",
+                "extra":{
+                    "branch-alias":{
+                        "dev-7.x-2.x":"7.2.x-dev"
+                    }
+                },
+                "require":{
+                    "php":">=5.2.0",
+                    "squizlabs\/php_codesniffer":">=1.4.6,<2.0.0",
+                    "drupal\/drupal":"7.*"
+                },
+                "suggest":{
+                    "drupal\/gplib":"Required by drupal\/coder_upgrade"
+                },
+                "replace":{
+                    "drupal\/coder_review":"self.version",
+                    "drupal\/drupalcs":"self.version",
+                    "drupal\/bad":"self.version",
+                    "drupal\/bad2":"self.version",
+                    "drupal\/coder_upgrade":"self.version"
+                }
+            }
         },
         {
-            "type": "composer",
-            "url": "http://static.drupal-packagist.org/v0.2.0"
+          "type": "composer",
+          "url": "http://packagist.drupal-composer.org"
         },
         {
             "type": "vcs",
@@ -17,6 +66,22 @@
         {
             "type": "vcs",
             "url": "git@github.com:promet/kw_manifests"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "simplehtmldom/simplehtmldom",
+                "version": "1.11.210-dev",
+                "source": {
+                    "url": "http://svn.code.sf.net/p/simplehtmldom/code",
+                    "type": "svn",
+                    "reference": "trunk@210"
+                },
+                "autoload": {
+                    "classmap": ["simple_html_dom.php"],
+                    "files": ["simple_html_dom.php"]
+                }
+            }
         }
     ],
     "require": {
@@ -49,31 +114,42 @@
         "winmillwill/settings_compile": "~2.1.1"
     },
     "require-dev": {
+        "behat/behat": "2.5.2",
+        "behat/mink": "~1.5.0@stable",
+        "behat/mink-selenium2-driver": "*",
+        "drupal/backup_migrate": "7.3.*",
         "drupal/devel": "7.*",
-        "drupal/devel_themer": "7.1.*@dev",
+        "drupal/devel_themer": "7.1.x-dev" ,
         "drupal/diff": "~7.3.2",
         "drupal/drupal-extension": "0.1.5",
-        "phpunit/phpunit": "*"
+        "drupal/stage_file_proxy": "7.1.6",
+        "drupal/xhprof": "~7.1.0-beta3",
+        "phpunit/phpunit": "4.3.5",
+        "simplehtmldom/simplehtmldom": "1.11.210-dev",
+        "drupal/coder": "7.2.4"
     },
     "extra": {
         "drupal-libraries": {
-          "library-directory": "www/sites/all/libraries",
-          "libraries": [
-            {
-              "name": "ckeditor",
-              "package": "ckeditor/ckeditor"
-            }
-          ]
+            "library-directory": "www/sites/all/libraries",
+            "libraries": [
+                {
+                    "name": "ckeditor",
+                    "package": "ckeditor/ckeditor"
+                },
+                {
+                    "name": "simplehtmldom",
+                    "package": "simplehtmldom/simplehtmldom"
+                }
+            ]
         }
     },
     "scripts": {
         "post-install-cmd": [
-            "bin/wrapper",
-            "vendor/bin/drupal_tangle"
+            "Drupal\\Tangler\\ScriptHandler::postUpdate",
+            "bin/wrapper"
         ],
         "post-update-cmd": [
-            "vendor/bin/drupal_tangle"
+            "Drupal\\Tangler\\ScriptHandler::postUpdate"
         ]
-    },
-    "type": "project"
+    }
 }
