@@ -1,6 +1,6 @@
 # Promet Drupal 7 Framework
 
-This is an example of a starting point for developing the Promet Way.
+This is an example of a starting point for developing the "Promet Way".
 
 You can most easily start your Drupal project with this baseline by using
 [Composer](getcomposer.org):
@@ -56,17 +56,72 @@ See:
 * [drupal/parse-composer](https://packagist.org/packages/drupal/parse-composer)
 * [winmillwill/settings_compile](https://packagist.org/packages/winmillwill/settings_compile)
 
+## Project Customization
+
+You may want to customize a couple of things about your box first. The scripts
+are built to take most of the work out of configuration. There are pretty much
+two things you may want to do:
+
+### Change the Project Name
+
+By editing the [project variable][CPN1], you can give your project a custom
+name. Note that this will affect several other configurations in the build as
+well, including what the base module will be called and what folder the site
+will live in.
+
+[CPN1]: https://github.com/promet/drupal7-framework/blob/master/Vagrantfile#L6
+
+### Change the VM IP
+
+You can edit the [IP variable][CVMIP1] if you want to run more than one VM at a
+time.
+
+[CVMIP1]: https://github.com/promet/drupal7-framework/blob/master/Vagrantfile#L5
+
+## Getting Started Developing
+
+* You need to edit your machine's local host file. Add the entry
+  `10.33.36.11 drupalproject.dev`
+* Run `vagrant up --provision` to build the environment.
+* ssh in with `vagrant ssh`
+* Navigate to `/var/www/sites/drupalproject.dev`.
+* PARTY!!!
+
+Vagrant provision currently does a full site install.
+
+To update without rebuilding, run `build/update.sh` from the project root in
+the vagrant box.
+
+It is also worth noting, if you are working on an existing site, that the
+default install script allows you to provide a reference database in order to
+start your development. Simply add a sql file to either of the following:
+
+* `build/ref/drupalproject.sql`
+* `build/ref/drupalproject.sql.gz`
+
+## Use
+
+**IMPORTANT**
+
+This project uses the [drop_ship]('github.com/promet/drop_ship') module to
+handle the reusable part of deployment, so everything will get disabled if you
+don't define dependencies. The `DROPSHIP_SEEDS` environment variable (see
+directly below) should consist of only the top level project module and
+environment specific modules.
+
+`DROPSHIP_SEEDS=drupalproject:devel`
+
 # Easy Development with Vagrant
 
 We have a Vagrantfile that references a Debian 7 box with php 5.4 and apache2
 and mysql. Once you have installed Vagrant, you can begin development like so:
 
 ```bash
-vagrant up # turn on the box and provision it
-vagrant ssh # log into the box like it's a server
-cd /var/www/sites/<project-name> # go to the sync'ed folder on the box
+vagrant up                                 # turn on the box and provision it
+vagrant ssh                                # log into the box like it's a server
+cd /var/www/sites/drupalproject.dev        # go to the sync'ed folder on the box
 alias drush="$PWD/vendor/bin/drush -r $PWD/www" # use drush from composer
-drush <whatever> # do some stuff to your website
+drush <whatever>                           # do some stuff to your website
 ```
 
 # The Build and Deployment Scripts
@@ -82,7 +137,7 @@ is the tool you can use when testing to see if your changes have been persisted
 in such a way that your collaborators can use them:
 
 ```bash
-build/install.sh # get a baseline
+build/install.sh                                # get a baseline
 alias drush="$PWD/vendor/bin/drush -r $PWD/www" # use drush from composer
 drush sql-dump > base.sql                       # save your baseline
 # ... do a whole bunch of Drupal hacking ...
@@ -125,6 +180,18 @@ See:
 
 * [drupal/drop_ship](https://github.com/promet/drop_ship)
 * [drupal/kw_manifests](https://github.com/promet/kw_manifests)
+
+# Testing Locally
+
+All the testing that happens in an automated way can be done the same way on
+your virtual machine. Simply run this command from your the project folder and
+it will do coding standard testing:
+
+`./build/drupalcs.sh`
+
+Or run this command that will do behat testing:
+
+`./build/runtests.sh`
 
 # TODO
 
