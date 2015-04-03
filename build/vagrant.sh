@@ -21,7 +21,8 @@ then
 fi
 
 echo "Starting up PhantomJS"
-/opt/phantomjs --webdriver=8643 &> /dev/null &
+pgrep phantomjs
+[[ $? -ne 0 ]] /opt/phantomjs --webdriver=8643 &> /dev/null &
 
 if [[ -z $project ]]
 then
@@ -41,6 +42,6 @@ then
   echo "Setting up Default Project Modules."
   mv default.module modules/custom/$project.module
   mv default.info modules/custom/$project.info
-  sed -i.bak s/default/$project/g $project.*
+  sed -i.bak s/default/$project/g modules/custom/$project.*
   echo "Don't forget to Commit these changes."
 fi

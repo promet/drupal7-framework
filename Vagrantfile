@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
   # tunables
   env_prefix  = ENV['DRUPAL_VAGRANT_ENV_PREFIX'] || 'DRUPAL_VAGRANT'
   ip          = ENV["#{env_prefix}_IP"] || '10.33.36.11'
-  project     = ENV["#{env_prefix}_PROJECT"] || 'drupal_project'
+  project     = ENV["#{env_prefix}_PROJECT"] || 'drupalproject'
   # end tunables
 
   config.vm.box     = "promet_wheezy"
@@ -20,7 +20,5 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
   config.vm.network :private_network, ip: ip
 
-  config.vm.provision :shell, inline: "cp #{path}/cnf/sources.list /etc/apt/sources.list"
-  config.vm.provision :shell, inline: "cd #{path}; build/vagrant.sh #{project}"
-  config.vm.provision :shell, inline: "cp #{path}; ./build/install.sh"
+  config.vm.provision :shell, inline: "cd #{path}; cp ./cnf/sources.list /etc/apt/sources.list; ./build/vagrant.sh #{project}; ./build/install.sh"
 end
