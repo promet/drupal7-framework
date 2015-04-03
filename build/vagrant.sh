@@ -1,4 +1,5 @@
 #!/bin/bash
+
 set -e
 project=$1
 path=$(dirname "$0")
@@ -21,8 +22,7 @@ then
 fi
 
 echo "Starting up PhantomJS"
-pgrep phantomjs
-[[ $? -ne 0 ]] /opt/phantomjs --webdriver=8643 &> /dev/null &
+[[ -z `pgrep phantomjs` ]] && /opt/phantomjs --webdriver=8643 &> /dev/null &
 
 if [[ -z $project ]]
 then
@@ -30,10 +30,12 @@ then
 fi
 
 cd $base
+
+[[ ! -z `grep "PROJECT=default" env.dist` ]] && sed -i "s/default/$project/" env.dist
+
 if [[ ! -f .env ]]
 then
   echo "Creating Environment File"
-  sed -i.bak s/default/$project/g env.dist
   echo "source env.dist" > .env
 fi
 source .env
@@ -42,6 +44,14 @@ then
   echo "Setting up Default Project Modules."
   mv default.module modules/custom/$project.module
   mv default.info modules/custom/$project.info
-  sed -i.bak s/default/$project/g modules/custom/$project.*
-  echo "Don't forget to Commit these changes."
+  sed -i s/default/$project/g modules/custom/$project.*
+  echo "*****************************************"
+  echo "* Don't forget to Commit these changes. *"
+  echo "*****************************************"
+fi
+
+if [[ ! -z `grep "# Promet Drupal 7 Framework" README.md` ]]
+then
+  sed -i "1s/^# Promet Drupal 7 Framework/# $project/" README.md
+  sed -i "s/drupalproject/$project/" README.md
 fi
