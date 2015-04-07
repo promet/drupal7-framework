@@ -119,7 +119,7 @@
         "behat/mink-selenium2-driver": "*",
         "drupal/backup_migrate": "7.3.*",
         "drupal/devel": "7.*",
-        "drupal/devel_themer": "7.1.x-dev" ,
+        "drupal/devel_themer": "7.1.x-dev",
         "drupal/diff": "~7.3.2",
         "drupal/drupal-extension": "0.1.5",
         "drupal/stage_file_proxy": "7.1.6",
