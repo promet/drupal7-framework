@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a64078431004f7c06e4a7a91fe04acf1",
+    "hash": "75fa8030c57b862e4d988d3fbef241a1",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -114,6 +114,40 @@
                 "package"
             ],
             "time": "2015-04-14 21:18:51"
+        },
+        {
+            "name": "d11wtq/boris",
+            "version": "v1.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/borisrepl/boris.git",
+                "reference": "125dd4e5752639af7678a22ea597115646d89c6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/borisrepl/boris/zipball/125dd4e5752639af7678a22ea597115646d89c6e",
+                "reference": "125dd4e5752639af7678a22ea597115646d89c6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "ext-pcntl": "*",
+                "ext-posix": "*",
+                "ext-readline": "*"
+            },
+            "bin": [
+                "bin/boris"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Boris": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2014-01-17 12:21:18"
         },
         {
             "name": "drupal/admin_menu",
@@ -295,27 +329,28 @@
         },
         {
             "name": "drupal/drop_ship",
-            "version": "1.0.2",
+            "version": "dev-1.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/promet/drop_ship.git",
-                "reference": "62c302b801c64c6e968a4523e065940cf096b0e7"
+                "reference": "4eea98895f674406c77e5f28afb246b98ae6d8b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/promet/drop_ship/zipball/62c302b801c64c6e968a4523e065940cf096b0e7",
-                "reference": "62c302b801c64c6e968a4523e065940cf096b0e7",
+                "url": "https://api.github.com/repos/promet/drop_ship/zipball/4eea98895f674406c77e5f28afb246b98ae6d8b7",
+                "reference": "4eea98895f674406c77e5f28afb246b98ae6d8b7",
                 "shasum": ""
             },
             "require": {
-                "drupal/kw_manifests": "1.*"
+                "drupal/features": "~7.2.2",
+                "drupal/kw_manifests": "dev-1.1.x-dev"
             },
             "type": "drupal-module",
             "support": {
-                "source": "https://github.com/promet/drop_ship/tree/1.0.2",
+                "source": "https://github.com/promet/drop_ship/tree/1.1.x-dev",
                 "issues": "https://github.com/promet/drop_ship/issues"
             },
-            "time": "2014-08-15 01:41:09"
+            "time": "2015-04-17 21:41:03"
         },
         {
             "name": "drupal/drupal",
@@ -662,27 +697,27 @@
         },
         {
             "name": "drupal/kw_manifests",
-            "version": "1.0.1",
+            "version": "dev-1.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/promet/kw_manifests.git",
-                "reference": "68eca6342bb3265898b650228dada9779032845e"
+                "reference": "198ccbbc0a72976c2f9603d291646198812651c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/promet/kw_manifests/zipball/68eca6342bb3265898b650228dada9779032845e",
-                "reference": "68eca6342bb3265898b650228dada9779032845e",
+                "url": "https://api.github.com/repos/promet/kw_manifests/zipball/198ccbbc0a72976c2f9603d291646198812651c8",
+                "reference": "198ccbbc0a72976c2f9603d291646198812651c8",
                 "shasum": ""
             },
             "require": {
                 "drupal/drupal": "7.*",
-                "drush/drush": "6.*"
+                "drush/drush": "6 - 7"
             },
             "type": "drupal-module",
             "support": {
-                "source": "https://github.com/promet/kw_manifests/tree/1.0.1"
+                "source": "https://github.com/promet/kw_manifests/tree/1.1.x-dev"
             },
-            "time": "2014-08-14 21:30:55"
+            "time": "2015-04-17 21:25:47"
         },
         {
             "name": "drupal/module_filter",
@@ -791,14 +826,15 @@
                 "shasum": null
             },
             "require": {
-                "drush/drush": "6.*"
+                "drush/drush": ">=6"
             },
             "type": "drupal-drush",
             "extra": {
                 "branch-alias": {
                     "dev-7.x-2.x": "7.2.x-dev"
                 }
-            }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/"
         },
         {
             "name": "drupal/rules",
@@ -976,23 +1012,28 @@
         },
         {
             "name": "drush/drush",
-            "version": "6.6.0",
+            "version": "7.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "1779c6c37d56235935e99d849bb4c910b632428e"
+                "reference": "8e3276d400eebf4d2d0a4d7c623766d6b610ecf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/1779c6c37d56235935e99d849bb4c910b632428e",
-                "reference": "1779c6c37d56235935e99d849bb4c910b632428e",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/8e3276d400eebf4d2d0a4d7c623766d6b610ecf0",
+                "reference": "8e3276d400eebf4d2d0a4d7c623766d6b610ecf0",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "d11wtq/boris": "~1.0",
+                "pear/console_table": "~1.2.0",
+                "php": ">=5.3.0",
+                "symfony/var-dumper": "2.6.3",
+                "symfony/yaml": "~2.2"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=3.5"
+                "phpunit/phpunit": ">=3.5",
+                "symfony/process": "2.4.5"
             },
             "bin": [
                 "drush",
@@ -1001,6 +1042,16 @@
                 "drush.complete.sh"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Drush": "lib/"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
@@ -1033,11 +1084,15 @@
                 {
                     "name": "Jonathan Hedstrom",
                     "email": "jhedstrom@gmail.com"
+                },
+                {
+                    "name": "Christopher Gervais",
+                    "email": "chris@ergonlogic.com"
                 }
             ],
             "description": "Drush is a command line shell and scripting interface for Drupal, a veritable Swiss Army knife designed to make life easier for those of us who spend some of our working hours hacking away at the command prompt.",
             "homepage": "http://www.drush.org",
-            "time": "2015-03-26 02:02:45"
+            "time": "2015-03-26 02:05:15"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1104,6 +1159,61 @@
                 "schema"
             ],
             "time": "2015-03-27 16:41:39"
+        },
+        {
+            "name": "pear/console_table",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobLoach/Console_Table.git",
+                "reference": "10d89fbbe533351dcfe5dc1e84de25d9a8395950"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobLoach/Console_Table/zipball/10d89fbbe533351dcfe5dc1e84de25d9a8395950",
+                "reference": "10d89fbbe533351dcfe5dc1e84de25d9a8395950",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=4.3.10"
+            },
+            "suggest": {
+                "pear/Console_Color2": ">=0.1.2"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Table.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Schneider",
+                    "homepage": "http://pear.php.net/user/yunosh"
+                },
+                {
+                    "name": "Tal Peer",
+                    "homepage": "http://pear.php.net/user/tal"
+                },
+                {
+                    "name": "Xavier Noguer",
+                    "homepage": "http://pear.php.net/user/xnoguer"
+                },
+                {
+                    "name": "Richard Heyes",
+                    "homepage": "http://pear.php.net/user/richard"
+                }
+            ],
+            "description": "Library that makes it easy to build console style tables.",
+            "homepage": "http://pear.php.net/package/Console_Table/",
+            "keywords": [
+                "console"
+            ],
+            "time": "2014-10-27 10:04:49"
         },
         {
             "name": "seld/jsonlint",
@@ -1409,6 +1519,59 @@
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
             "time": "2015-04-10 07:23:38"
+        },
+        {
+            "name": "symfony/var-dumper",
+            "version": "v2.6.3",
+            "target-dir": "Symfony/Component/VarDumper",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "36af986811340fd4c1bc39cf848da388bbdd8473"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/36af986811340fd4c1bc39cf848da388bbdd8473",
+                "reference": "36af986811340fd4c1bc39cf848da388bbdd8473",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-symfony_debug": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-0": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "http://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2015-01-01 13:28:01"
         },
         {
             "name": "symfony/yaml",
@@ -3704,6 +3867,8 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "composer/composer": 15,
+        "drupal/drop_ship": 20,
+        "drupal/kw_manifests": 20,
         "behat/mink": 0,
         "drupal/devel_themer": 20,
         "simplehtmldom/simplehtmldom": 20

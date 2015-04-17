@@ -92,7 +92,7 @@
         "drupal/admin_menu": "7.*",
         "drupal/context": "7.*",
         "drupal/ctools": "7.*",
-        "drupal/drop_ship": "1.*",
+        "drupal/drop_ship": "dev-1.1.x-dev",
         "drupal/drupal-library-installer-plugin": "~0.1",
         "drupal/date": "7.*",
         "drupal/diff": "7.*",
@@ -101,7 +101,7 @@
         "drupal/features": "7.2.*",
         "drupal/feeds": "7.*",
         "drupal/job_scheduler": "7.*",
-        "drupal/kw_manifests": "1.*",
+        "drupal/kw_manifests": "dev-1.1.x-dev",
         "drupal/module_filter": "7.*",
         "drupal/omega": "7.4.*",
         "drupal/panels": "7.*",
@@ -110,7 +110,7 @@
         "drupal/strongarm": "7.*",
         "drupal/views": "7.*",
         "drupal/wysiwyg": "7.*",
-        "drush/drush": "6.*",
+        "drush/drush": "7.*",
         "winmillwill/settings_compile": "~2.1.1"
     },
     "require-dev": {
