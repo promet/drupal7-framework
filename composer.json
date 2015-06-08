@@ -82,6 +82,30 @@
                     "files": ["simple_html_dom.php"]
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "promet/drupal-wysiwyg-patched",
+                "version": "1.0.0",
+                "type": "patches",
+                "require": {
+                    "netresearch/composer-patches-plugin": "~1.0",
+                    "drupal/wysiwyg": "7.2.2"
+                },
+                "extra": {
+                    "patches": {
+                        "drupal/wysiwyg": {
+                          "7.2.2": [
+                                {
+                                    "title": "Ckeditor 4.0 - The version of CKEditor could not be detected.",
+                                    "url": "https://www.drupal.org/files/wysiwyg-ckeditor4-1853550-4.patch"
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
         }
     ],
     "require": {
@@ -109,8 +133,8 @@
         "drupal/rules": "7.*",
         "drupal/strongarm": "7.*",
         "drupal/views": "7.*",
-        "drupal/wysiwyg": "7.*",
         "drush/drush": "6.*",
+        "promet/drupal-wysiwyg-patched": "~1.0",
         "winmillwill/settings_compile": "~2.1.1"
     },
     "require-dev": {
