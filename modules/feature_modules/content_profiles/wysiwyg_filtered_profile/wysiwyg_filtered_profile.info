@@ -1,10 +1,11 @@
-name = wysiwyg_filtered_profile
+name = WYSIWYG Filtered Profile
 core = 7.x
 package = Promet Defaults
+version = 7.x-2.0
+dependencies[] = ckeditor
 dependencies[] = features
 dependencies[] = filter
-dependencies[] = wysiwyg
+dependencies[] = wysiwyg_global_profile
+features[ckeditor_profile][] = Filtered
 features[features_api][] = api:2
 features[filter][] = filtered_html
-features[wysiwyg][] = filtered_html
-project path = sites/all/modules

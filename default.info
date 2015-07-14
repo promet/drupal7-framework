@@ -16,5 +16,5 @@ dependencies[] = module_filter
 dependencies[] = rules
 dependencies[] = strongarm
 dependencies[] = views
+dependencies[] = wysiwyg_advanced_profile
 dependencies[] = wysiwyg_filtered_profile
-dependencies[] = wysiwyg_full_profile

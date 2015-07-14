@@ -1,0 +1,12 @@
+name = WYSIWYG Advanced Profile
+core = 7.x
+package = Promet Defaults
+version = 7.x-1.0
+dependencies[] = ckeditor
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg_global_profile
+features[ckeditor_profile][] = Advanced
+features[features_api][] = api:2
+features[filter][] = advanced_html
+project path = sites/all/modules/feature_modules/content_profiles

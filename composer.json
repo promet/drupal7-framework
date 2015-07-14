@@ -90,6 +90,7 @@
         "drupal/drupal": "7.*",
         "drupal/tangler": "~0.1.9",
         "drupal/admin_menu": "7.*",
+        "drupal/ckeditor": "7.*",
         "drupal/context": "7.*",
         "drupal/ctools": "7.*",
         "drupal/drop_ship": "1.*",
@@ -109,7 +110,6 @@
         "drupal/rules": "7.*",
         "drupal/strongarm": "7.*",
         "drupal/views": "7.*",
-        "drupal/wysiwyg": "dev-7.x-2.x",
         "drush/drush": "6.*",
         "winmillwill/settings_compile": "~2.1.1"
     },

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "595a9c3e6fb947a4ce353f34e036109a",
+    "hash": "2ed093bfa31d105a2016e5f9af052e92",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -149,6 +149,33 @@
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
             "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
             "homepage": "https://www.drupal.org/project/admin_menu"
+        },
+        {
+            "name": "drupal/ckeditor",
+            "version": "7.1.16",
+            "source": {
+                "type": "git",
+                "url": "http://git.drupal.org/project/ckeditor",
+                "reference": "fadeb31dff92f2ae393ce7e8b3694f71c1ddd3f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://ftp.drupal.org/files/projects/ckeditor-7.x-1.16.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "drupal/drupal": "7.*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-7.x-1.x": "7.1.x-dev"
+                }
+            },
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "description": "Enables CKEditor (WYSIWYG HTML editor) for use instead of plain text fields.",
+            "homepage": "https://www.drupal.org/project/ckeditor"
         },
         {
             "name": "drupal/context",
@@ -889,34 +916,6 @@
             },
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
             "description": "Create customized lists and queries from your database."
-        },
-        {
-            "name": "drupal/wysiwyg",
-            "version": "dev-7.x-2.x",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/wysiwyg",
-                "reference": "727a20827cfae1a839330cf66eca91420cb1b89b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/wysiwyg-7.x-2.x-dev.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "Allows to edit content with client-side editors.",
-            "homepage": "https://www.drupal.org/project/wysiwyg",
-            "time": "2015-07-03 14:12:43"
         },
         {
             "name": "drush/drush",
@@ -3631,7 +3630,6 @@
     "stability-flags": {
         "ckeditor/ckeditor": 20,
         "composer/composer": 15,
-        "drupal/wysiwyg": 20,
         "behat/mink": 0,
         "drupal/devel_themer": 20,
         "simplehtmldom/simplehtmldom": 20
