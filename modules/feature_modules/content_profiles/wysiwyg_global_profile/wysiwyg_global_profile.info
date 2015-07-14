@@ -1,0 +1,9 @@
+name = WYSIWYG Global Profile
+core = 7.x
+package = Promet Defaults
+version = 7.x-1.0
+dependencies[] = ckeditor
+features[ckeditor_profile][] = CKEditor Global Profile
+features[features_api][] = api:2
+features_exclude[dependencies][ckeditor] = ckeditor
+project path = sites/all/modules/feature_modules/content_profiles
