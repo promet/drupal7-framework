@@ -135,10 +135,6 @@
                 {
                     "name": "ckeditor",
                     "package": "ckeditor/ckeditor"
-                },
-                {
-                    "name": "simplehtmldom",
-                    "package": "simplehtmldom/simplehtmldom"
                 }
             ]
         }
