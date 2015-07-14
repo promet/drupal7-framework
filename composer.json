@@ -56,8 +56,8 @@
             }
         },
         {
-          "type": "composer",
-          "url": "http://packagist.drupal-composer.org"
+            "type": "composer",
+            "url": "http://packagist.drupal-composer.org"
         },
         {
             "type": "vcs",
@@ -85,7 +85,7 @@
         }
     ],
     "require": {
-        "ckeditor/ckeditor": "~4.4.4",
+        "ckeditor/ckeditor": "dev-full/stable",
         "composer/composer": "~1.0@alpha",
         "drupal/drupal": "7.*",
         "drupal/tangler": "~0.1.9",
@@ -109,7 +109,7 @@
         "drupal/rules": "7.*",
         "drupal/strongarm": "7.*",
         "drupal/views": "7.*",
-        "drupal/wysiwyg": "7.*",
+        "drupal/wysiwyg": "dev-7.x-2.x",
         "drush/drush": "6.*",
         "winmillwill/settings_compile": "~2.1.1"
     },
