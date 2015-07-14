@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "60bb0133f8c7920289a1aa79ad05e969",
+    "hash": "5d210bf246d8b171672e2658f59fe416",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
-            "version": "4.4.8",
+            "version": "dev-full/stable",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ckeditor/ckeditor-releases.git",
-                "reference": "a68e8c32012f2955b76e0d2e84f1b14a90c8c959"
+                "reference": "bf3b468a3000727e0f2a248ff947525bd42388cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/a68e8c32012f2955b76e0d2e84f1b14a90c8c959",
-                "reference": "a68e8c32012f2955b76e0d2e84f1b14a90c8c959",
+                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/bf3b468a3000727e0f2a248ff947525bd42388cb",
+                "reference": "bf3b468a3000727e0f2a248ff947525bd42388cb",
                 "shasum": ""
             },
             "type": "library",
@@ -29,7 +29,7 @@
             ],
             "authors": [
                 {
-                    "name": "CKSource",
+                    "name": "CKSource - Frederico Knabben",
                     "homepage": "http://cksource.com"
                 }
             ],
@@ -45,7 +45,7 @@
                 "text",
                 "wysiwyg"
             ],
-            "time": "2015-07-01 12:45:18"
+            "time": "2015-07-02 12:37:51"
         },
         {
             "name": "composer/composer",
@@ -892,15 +892,15 @@
         },
         {
             "name": "drupal/wysiwyg",
-            "version": "7.2.2",
+            "version": "dev-7.x-2.x",
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/wysiwyg",
-                "reference": "41693f1db2683a78191b059d22be98300cc9e424"
+                "reference": "727a20827cfae1a839330cf66eca91420cb1b89b"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/wysiwyg-7.x-2.2.zip",
+                "url": "http://ftp.drupal.org/files/projects/wysiwyg-7.x-2.x-dev.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -913,7 +913,10 @@
                     "dev-7.x-2.x": "7.2.x-dev"
                 }
             },
-            "description": "Allows to edit content with client-side editors."
+            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "description": "Allows to edit content with client-side editors.",
+            "homepage": "https://www.drupal.org/project/wysiwyg",
+            "time": "2015-07-03 14:12:43"
         },
         {
             "name": "drush/drush",
@@ -3626,7 +3629,9 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
+        "ckeditor/ckeditor": 20,
         "composer/composer": 15,
+        "drupal/wysiwyg": 20,
         "behat/mink": 0,
         "drupal/devel_themer": 20,
         "simplehtmldom/simplehtmldom": 20
