@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
   # tunables
   env_prefix  = ENV['DRUPAL_VAGRANT_ENV_PREFIX'] || 'DRUPAL_VAGRANT'
   ip          = ENV["#{env_prefix}_IP"] || '10.33.36.11'
-  project     = ENV["#{env_prefix}_PROJECT"] || 'drupal'
+  project     = ENV["#{env_prefix}_PROJECT"] || 'drupalproject'
   # end tunables
 
   config.vm.box     = "promet_wheezy"
@@ -20,13 +20,5 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
   config.vm.network :private_network, ip: ip
 
-  config.vm.provision :shell, inline: <<SCRIPT
-  set -ex
-  apt-get update && apt-get install -q -y git-core
-  curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer;
-  cp #{path}/cnf/sources.list /etc/apt/sources.list;
-  su vagrant -c 'cd #{path} && composer install;
-  cd #{path} && [[ -f .env ]] && source .env || cp env.dist .env && source env.dist && build/install.sh;'
-  #{path}/build/vagrant.sh
-SCRIPT
+  config.vm.provision :shell, inline: "cd #{path}; cp ./cnf/sources.list /etc/apt/sources.list; ./build/vagrant.sh #{project}; ./build/install.sh"
 end
