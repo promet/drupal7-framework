@@ -77,6 +77,12 @@
                     "type": "svn",
                     "reference": "trunk@210"
                 },
+                "dist": {
+                    "type": "zip",
+                    "url": "http://sourceforge.net/projects/simplehtmldom/files/latest/download?source=directory",
+                    "reference": null,
+                    "shasum": null
+                },
                 "autoload": {
                     "classmap": ["simple_html_dom.php"],
                     "files": ["simple_html_dom.php"]

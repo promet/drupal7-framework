@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2ed093bfa31d105a2016e5f9af052e92",
+    "hash": "7f4c54b92590609a1e9ce98a41443ab2",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -137,9 +137,6 @@
                 "drupal/admin_devel": "self.version",
                 "drupal/admin_menu_toolbar": "self.version"
             },
-            "suggest": {
-                "drupal/admin_menu": "Required by drupal/admin_menu_toolbar"
-            },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
@@ -147,8 +144,7 @@
                 }
             },
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
-            "homepage": "https://www.drupal.org/project/admin_menu"
+            "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions)."
         },
         {
             "name": "drupal/ckeditor",
@@ -702,15 +698,15 @@
         },
         {
             "name": "drupal/omega",
-            "version": "7.4.3",
+            "version": "7.4.4",
             "source": {
                 "type": "git",
                 "url": "http://git.drupal.org/project/omega",
-                "reference": "bbe0b4641dc24a55ce8da7fe801a3e8e720f3138"
+                "reference": "59ad969c9f887850ab5108812370bbdba157ed4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/omega-7.x-4.3.zip",
+                "url": "http://ftp.drupal.org/files/projects/omega-7.x-4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -727,7 +723,8 @@
                 }
             },
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "A powerful HTML5 base theme framework utilizing tools like <a href=\"http://sass-lang.com/\" title=\"Sass\">Sass</a>, <a href=\"http://compass-style.org/\" title=\"Compass\">Compass</a>, <a href=\"http://gruntjs.com/\" title=\"Grunt\">Grunt</a>, <a href=\"http://bower.io/\" title=\"Bower\">Bower</a>, <a href=\"http://rvm.io/\" title=\"Ruby Version Manager\">Ruby Version Manager</a>, <a href=\"http://bundler.io/\" title=\"Bundler\">Bundler</a> and more."
+            "description": "A powerful base theme framework.",
+            "homepage": "https://www.drupal.org/project/omega"
         },
         {
             "name": "drupal/panels",
@@ -765,8 +762,7 @@
                 }
             },
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled.",
-            "homepage": "https://www.drupal.org/project/panels"
+            "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled."
         },
         {
             "name": "drupal/registry_rebuild",
@@ -3198,6 +3194,12 @@
                 "type": "svn",
                 "url": "http://svn.code.sf.net/p/simplehtmldom/code",
                 "reference": "trunk@210"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://sourceforge.net/projects/simplehtmldom/files/latest/download?source=directory",
+                "reference": null,
+                "shasum": null
             },
             "type": "library",
             "autoload": {
