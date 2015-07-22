@@ -42,9 +42,10 @@ source .env
 if [[ -f default.module ]]
 then
   echo "Setting up Default Project Modules."
-  mv default.module modules/custom/$project.module
-  mv default.info modules/custom/$project.info
-  sed -i s/default/$project/g modules/custom/$project.*
+  mkdir modules/custom/$project
+  mv default.module modules/custom/$project/$project.module
+  mv default.info modules/custom/$project/$project.info
+  sed -i s/default/$project/g modules/custom/$project/$project.*
   echo "*****************************************"
   echo "* Don't forget to Commit these changes. *"
   echo "*****************************************"
