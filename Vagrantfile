@@ -6,8 +6,7 @@ Vagrant.configure("2") do |config|
   project     = ENV["#{env_prefix}_PROJECT"] || 'drupalproject'
   # end tunables
 
-  config.vm.box     = "promet_wheezy"
-  config.vm.box_url = "https://s3.amazonaws.com/promet_debian_boxes/wheezy_virtualbox.box"
+  config.vm.box     = "promet/wheezy"
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", 2048]
   end
