@@ -2,6 +2,7 @@
 
 set -e
 project=$1
+dir=${project//[^a-zA-Z0-9]/_}
 path=$(dirname "$0")
 base=$(cd $path/.. && pwd)
 
@@ -31,7 +32,7 @@ fi
 
 cd $base
 
-[[ ! -z `grep "PROJECT=default" env.dist` ]] && sed -i "s/default/$project/" env.dist
+[[ ! -z `grep "PROJECT=default" env.dist` ]] && sed -i "s/default/$dir/" env.dist
 
 if [[ ! -f .env ]]
 then
@@ -42,10 +43,11 @@ source .env
 if [[ -f default.module ]]
 then
   echo "Setting up Default Project Modules."
-  mkdir modules/custom/$project
-  mv default.module modules/custom/$project/$project.module
-  mv default.info modules/custom/$project/$project.info
-  sed -i s/default/$project/g modules/custom/$project/$project.*
+  mkdir modules/custom/$dir
+  mv default.module modules/custom/$dir/$dir.module
+  mv default.info modules/custom/$dir/$dir.info
+  sed -i s/default/$project/g modules/custom/$dir/$dir.*
+  sed -i s/Default/$project/g modules/custom/$dir/$dir.*
   echo "*****************************************"
   echo "* Don't forget to Commit these changes. *"
   echo "*****************************************"
