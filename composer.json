@@ -4,58 +4,6 @@
     "type": "project",
     "repositories": [
         {
-            "type":"package",
-            "package": {
-                "name":"drupal\/coder",
-                "description":"Coder is a library and a module to review Drupal code.",
-                "keywords":[
-                    "standards",
-                    "phpcs",
-                    "code review"
-                ],
-                "homepage":"https:\/\/drupal.org\/project\/coder",
-                "version":"7.2.4",
-                "version_normalized":"7.2.4.0",
-                "license":[
-                    "GPL-2.0+"
-                ],
-                "authors":[],
-                "source":{
-                    "type":"git",
-                    "url":"http:\/\/git.drupal.org\/project\/coder.git",
-                    "reference":"5d36c5d737114e0812653401d245dd69d586fc0a"
-                },
-                "dist":{
-                    "type":"zip",
-                    "url":"http:\/\/ftp.drupal.org\/files\/projects\/coder-7.x-2.4.zip",
-                    "reference":null,
-                    "shasum":null
-                },
-                "type":"drupal-module",
-                "time":"2015-01-14T23:19:28+00:00",
-                "extra":{
-                    "branch-alias":{
-                        "dev-7.x-2.x":"7.2.x-dev"
-                    }
-                },
-                "require":{
-                    "php":">=5.2.0",
-                    "squizlabs\/php_codesniffer":">=1.4.6,<2.0.0",
-                    "drupal\/drupal":"7.*"
-                },
-                "suggest":{
-                    "drupal\/gplib":"Required by drupal\/coder_upgrade"
-                },
-                "replace":{
-                    "drupal\/coder_review":"self.version",
-                    "drupal\/drupalcs":"self.version",
-                    "drupal\/bad":"self.version",
-                    "drupal\/bad2":"self.version",
-                    "drupal\/coder_upgrade":"self.version"
-                }
-            }
-        },
-        {
             "type": "composer",
             "url": "http://packagist.drupal-composer.org"
         },
@@ -66,63 +14,37 @@
         {
             "type": "vcs",
             "url": "git@github.com:promet/kw_manifests"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "simplehtmldom/simplehtmldom",
-                "version": "1.11.210-dev",
-                "source": {
-                    "url": "http://svn.code.sf.net/p/simplehtmldom/code",
-                    "type": "svn",
-                    "reference": "trunk@210"
-                },
-                "dist": {
-                    "type": "zip",
-                    "url": "http://sourceforge.net/projects/simplehtmldom/files/latest/download?source=directory",
-                    "reference": null,
-                    "shasum": null
-                },
-                "autoload": {
-                    "classmap": ["simple_html_dom.php"],
-                    "files": ["simple_html_dom.php"]
-                }
-            }
         }
     ],
     "require": {
         "ckeditor/ckeditor": "dev-full/stable",
         "composer/composer": "~1.0@alpha",
-        "drupal/drupal": "7.*",
-        "drupal/tangler": "~0.1.9",
-        "drupal/admin_menu": "7.*",
-        "drupal/ckeditor": "7.*",
-        "drupal/context": "7.*",
-        "drupal/ctools": "7.*",
+        "drupal/admin_menu": "~7.3.0-rc5",
+        "drupal/ckeditor": "~7.1.16",
+        "drupal/context": "~7.3.6",
+        "drupal/ctools": "~7.1.9",
+        "drupal/date": "~7.2.9",
+        "drupal/diff": "~7.3.2",
         "drupal/drop_ship": "1.*",
+        "drupal/drupal": "~7.41",
         "drupal/drupal-library-installer-plugin": "~0.1",
-        "drupal/date": "7.*",
-        "drupal/diff": "7.*",
-        "drupal/entity": "7.*",
-        "drupal/entityform": "7.*",
+        "drupal/entity": "~7.1.6",
         "drupal/features": "7.2.*",
-        "drupal/feeds": "7.*",
-        "drupal/job_scheduler": "7.*",
         "drupal/kw_manifests": "1.*",
-        "drupal/module_filter": "7.*",
+        "drupal/module_filter": "~7.2.0",
         "drupal/omega": "7.4.*",
-        "drupal/panels": "7.*",
-        "drupal/registry_rebuild": "7.*",
-        "drupal/rules": "7.*",
-        "drupal/strongarm": "7.*",
-        "drupal/views": "7.*",
+        "drupal/panels": "7.3.*",
+        "drupal/registry_rebuild": "7.2.*",
+        "drupal/strongarm": "7.2.*",
+        "drupal/tangler": "~0.1.9",
+        "drupal/views": "7.3.*",
         "drush/drush": "6.*",
         "winmillwill/settings_compile": "~2.1.1"
     },
     "require-dev": {
         "behat/behat": "2.5.2",
         "behat/mink": "~1.5.0@stable",
-        "behat/mink-selenium2-driver": "*",
+        "behat/mink-selenium2-driver": "1.*",
         "drupal/backup_migrate": "7.3.*",
         "drupal/devel": "7.*",
         "drupal/devel_themer": "7.1.x-dev",
@@ -131,7 +53,6 @@
         "drupal/stage_file_proxy": "7.1.6",
         "drupal/xhprof": "~7.1.0-beta3",
         "phpunit/phpunit": "4.3.5",
-        "simplehtmldom/simplehtmldom": "1.11.210-dev",
         "drupal/coder": "7.2.4"
     },
     "extra": {

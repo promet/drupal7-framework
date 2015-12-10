@@ -1,10 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7f4c54b92590609a1e9ce98a41443ab2",
+    "hash": "d77a05c3744fb57b1649ae3ae2f958a8",
+    "content-hash": "67d81b372c8bd47cb934ff0b62cfe90b",
     "packages": [
         {
             "name": "ckeditor/ckeditor",
@@ -266,6 +267,9 @@
                 "drupal/admin_devel": "self.version",
                 "drupal/admin_menu_toolbar": "self.version"
             },
+            "suggest": {
+                "drupal/admin_menu": "Required by drupal/admin_menu_toolbar"
+            },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
@@ -273,7 +277,8 @@
                 }
             },
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions)."
+            "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
+            "homepage": "https://www.drupal.org/project/admin_menu"
         },
         {
             "name": "drupal/ckeditor",
@@ -645,46 +650,6 @@
             "description": "Enables modules to work with any entity type and to provide entities."
         },
         {
-            "name": "drupal/entityform",
-            "version": "7.2.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/entityform",
-                "reference": "ab1e99512782a2bcdbec9491f435442f41b25a22"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/entityform-7.x-2.0-rc2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/entity": "7.*",
-                "drupal/views": "7.*"
-            },
-            "replace": {
-                "drupal/entityform_anonymous": "self.version",
-                "drupal/entityform_i18n": "self.version",
-                "drupal/entityform_notifications": "self.version"
-            },
-            "suggest": {
-                "drupal/entity2text": "Required by drupal/entityform_notifications",
-                "drupal/entity_rules": "Required by drupal/entityform_notifications",
-                "drupal/i18n_string": "Required by drupal/entityform_i18n",
-                "drupal/rules": "Required by drupal/entityform_notifications",
-                "drupal/session_api": "Required by drupal/entityform_anonymous"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "Provides fieldable entity forms"
-        },
-        {
             "name": "drupal/features",
             "version": "7.2.7",
             "source": {
@@ -710,74 +675,6 @@
             "notification-url": "http://packagist.drupal-composer.org/downloads/",
             "description": "Provides feature management for Drupal.",
             "homepage": "https://www.drupal.org/project/features"
-        },
-        {
-            "name": "drupal/feeds",
-            "version": "7.2.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/feeds",
-                "reference": "e7f7f3987bd10a37010e6d1fa3d4d1b50e67c4cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/feeds-7.x-2.0-beta1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/ctools": "7.*",
-                "drupal/drupal": "7.*",
-                "drupal/job_scheduler": "7.*"
-            },
-            "replace": {
-                "drupal/feeds_import": "self.version",
-                "drupal/feeds_news": "self.version",
-                "drupal/feeds_ui": "self.version"
-            },
-            "suggest": {
-                "drupal/ctools": "Required by drupal/feeds_import, drupal/feeds_news",
-                "drupal/features": "Required by drupal/feeds_news",
-                "drupal/views": "Required by drupal/feeds_news"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "Aggregates RSS/Atom/RDF feeds, imports CSV files and more.",
-            "homepage": "https://www.drupal.org/project/feeds"
-        },
-        {
-            "name": "drupal/job_scheduler",
-            "version": "7.2.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/job_scheduler",
-                "reference": "a7ce6cccd424647cdcb1e475aea5a5582914067e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/job_scheduler-7.x-2.0-alpha3.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*"
-            },
-            "replace": {
-                "drupal/job_scheduler_trigger": "self.version"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "Scheduler API"
         },
         {
             "name": "drupal/kw_manifests",
@@ -923,42 +820,6 @@
             ],
             "description": "Provides the registry_rebuild script.",
             "time": "2015-12-02 22:46:41"
-        },
-        {
-            "name": "drupal/rules",
-            "version": "7.2.9",
-            "source": {
-                "type": "git",
-                "url": "http://git.drupal.org/project/rules",
-                "reference": "db14bda9a821db324754339771950afd70fc750d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/rules-7.x-2.9.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "drupal/drupal": "7.*",
-                "drupal/entity": "7.*",
-                "drupal/entity_token": "7.*"
-            },
-            "replace": {
-                "drupal/rules_admin": "self.version",
-                "drupal/rules_i18n": "self.version",
-                "drupal/rules_scheduler": "self.version"
-            },
-            "suggest": {
-                "drupal/i18n_string": "Required by drupal/rules_i18n"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-7.x-2.x": "7.2.x-dev"
-                }
-            },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
-            "description": "React on events and conditionally evaluate actions."
         },
         {
             "name": "drupal/strongarm",
@@ -2205,7 +2066,7 @@
             "version": "7.2.4",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/coder.git",
+                "url": "http://git.drupal.org/project/coder",
                 "reference": "5d36c5d737114e0812653401d245dd69d586fc0a"
             },
             "dist": {
@@ -3484,30 +3345,6 @@
             "time": "2015-06-21 13:59:46"
         },
         {
-            "name": "simplehtmldom/simplehtmldom",
-            "version": "1.11.210-dev",
-            "source": {
-                "type": "svn",
-                "url": "http://svn.code.sf.net/p/simplehtmldom/code",
-                "reference": "trunk@210"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "http://sourceforge.net/projects/simplehtmldom/files/latest/download?source=directory",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "simple_html_dom.php"
-                ],
-                "files": [
-                    "simple_html_dom.php"
-                ]
-            }
-        },
-        {
             "name": "squizlabs/php_codesniffer",
             "version": "1.5.6",
             "source": {
@@ -3941,8 +3778,7 @@
         "ckeditor/ckeditor": 20,
         "composer/composer": 15,
         "behat/mink": 0,
-        "drupal/devel_themer": 20,
-        "simplehtmldom/simplehtmldom": 20
+        "drupal/devel_themer": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
