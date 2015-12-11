@@ -1,9 +1,9 @@
 #!/bin/bash
 
 set -e
-path=$(dirname "$0")
+path="$(dirname "$0")"
 pushd $path/..
-base=$(pwd);
+base="$(pwd)";
 
 drupal_base="$base/www"
 
@@ -49,15 +49,15 @@ echo "DRUSH: $drush"
 echo "DRUPAL BASE: $drupal_base"
 
 if [[ -f "$base/.env" ]]; then
-  echo "source $base/.env"
-  source $base/.env
+  echo "Using Custom ENV file at $base/.env"
+  source "$base/.env"
 else
-  echo "source $base/env.dist"
-  source $base/env.dist
+  echo "Using Distributed ENV file at $base/env.dist"
+  source "$base/env.dist"
 fi
 
 # If Composer.json exists and the composer command.
-if [[ -e $base/composer.json ]] && which composer > /dev/null; then
+if [[ -e "$base/composer.json" ]] && which composer > /dev/null; then
   # Then run Composer
   echo "Installing dependencies with Composer.";
   composer install

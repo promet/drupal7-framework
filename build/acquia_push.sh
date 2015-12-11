@@ -18,9 +18,9 @@ if [ -z $1 ]; then
   exit 1;
 fi
 
-base=$(dirname "$0")/..
-acquia_base=$1
-drupal_root=$acquia_base/docroot
+base="$(dirname "$0")/.."
+acquia_base="$1"
+drupal_root="$acquia_base/docroot"
 
 # Only works in bash
 shopt -s extglob
@@ -29,7 +29,7 @@ sudo rm -rf $acquia_base/!(.git)
 echo "Copying files forming the artifact site"
 rsync -av --force --progress --exclude ".env" --exclude ".git" --exclude "www/sites/default/files" --exclude "build/ref" --exclude "private" --exclude "martincountymail" "$base" "$acquia_base" > /dev/null;
 echo -e "\n\nRemoving Drupal .gitignore\n\n"
-rm $drupal_root/.gitignore
+rm "$drupal_root/.gitignore"
 echo -e "Removing items from .gitignore\n\n"
 sed -i -e '/^docroot$/d' "$acquia_base/.gitignore"
 sed -i -e '/^vendor$/d' "$acquia_base/.gitignore"

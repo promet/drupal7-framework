@@ -1,6 +1,6 @@
 #!/bin/sh
 
-path=`dirname "$0"`
+path="$(dirname "$0")""
 site="$1"
 target_env="$2"
 source_branch="$3"
