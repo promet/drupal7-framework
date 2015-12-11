@@ -9,11 +9,11 @@ echo "Installing Drupal minimal profile."
 echo "Installing site...";
 sqlfile="$base/build/ref/$PROJECT.sql"
 gzipped_sqlfile="$sqlfile.gz"
-if [ -e "$gzipped_sqlfile" ]; then
+if [[ -e "$gzipped_sqlfile" ]]; then
   echo "...from reference database."
   $drush sql-drop -y
   zcat "$gzipped_sqlfile" | $drush sqlc
-elif [ -e "$sqlfile" ]; then
+elif [[ -e "$sqlfile" ]]; then
   echo "...from reference database."
   $drush sql-drop -y
   $drush sqlc < "$sqlfile"

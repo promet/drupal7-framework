@@ -2,7 +2,7 @@
 
 set -e
 
-if [ -z $1 ]; then
+if [[ -z "$1" ]]; then
   echo "
  Usage:
 
@@ -15,7 +15,7 @@ if [ -z $1 ]; then
  /var/www/sites/project.dev/build/acquia_push.sh /var/www/sites/project.acquia
 
  "
-  exit 1;
+  exit 1
 fi
 
 base="$(dirname "$0")/.."
@@ -23,11 +23,12 @@ acquia_base="$1"
 drupal_root="$acquia_base/docroot"
 
 # Only works in bash
+echo "Removing all files but the .git folder."
 shopt -s extglob
 sudo rm -rf $acquia_base/!(.git)
 
 echo "Copying files forming the artifact site"
-rsync -av --force --progress --exclude ".env" --exclude ".git" --exclude "www/sites/default/files" --exclude "build/ref" --exclude "private" --exclude "martincountymail" "$base" "$acquia_base" > /dev/null;
+rsync -a --force --progress --exclude ".env" --exclude ".git" --exclude "www/sites/default/files" --exclude "build/ref" --exclude "private" "$base" "$acquia_base"
 echo -e "\n\nRemoving Drupal .gitignore\n\n"
 rm "$drupal_root/.gitignore"
 echo -e "Removing items from .gitignore\n\n"
