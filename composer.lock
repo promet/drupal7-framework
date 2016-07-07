@@ -250,12 +250,12 @@
             "version": "7.3.0-rc5",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/admin_menu",
+                "url": "https://git.drupal.org/project/admin_menu",
                 "reference": "59a4fe3d4da5a80dd6abec5873a9930ccfb15c17"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/admin_menu-7.x-3.0-rc5.zip",
+                "url": "https://ftp.drupal.org/files/projects/admin_menu-7.x-3.0-rc5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -276,7 +276,7 @@
                     "dev-7.x-3.x": "7.3.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Provides a dropdown menu to most administrative tasks and other common destinations (to users with the proper permissions).",
             "homepage": "https://www.drupal.org/project/admin_menu"
         },
@@ -285,12 +285,12 @@
             "version": "7.1.16",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/ckeditor",
+                "url": "https://git.drupal.org/project/ckeditor",
                 "reference": "fadeb31dff92f2ae393ce7e8b3694f71c1ddd3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/ckeditor-7.x-1.16.zip",
+                "url": "https://ftp.drupal.org/files/projects/ckeditor-7.x-1.16.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -303,7 +303,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Enables CKEditor (WYSIWYG HTML editor) for use instead of plain text fields.",
             "homepage": "https://www.drupal.org/project/ckeditor"
         },
@@ -312,12 +312,12 @@
             "version": "7.3.6",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/context",
+                "url": "https://git.drupal.org/project/context",
                 "reference": "ce2d04eb0d9f5a720abf58f7e15f0ee43bf9cfa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/context-7.x-3.6.zip",
+                "url": "https://ftp.drupal.org/files/projects/context-7.x-3.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -335,7 +335,7 @@
                     "dev-7.x-3.x": "7.3.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Provide modules with a cache that lasts for a single page request."
         },
         {
@@ -343,12 +343,12 @@
             "version": "7.1.9",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/ctools",
+                "url": "https://git.drupal.org/project/ctools",
                 "reference": "1bf2f388cd7371ae16639349ae3b344732faafae"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/ctools-7.x-1.9.zip",
+                "url": "https://ftp.drupal.org/files/projects/ctools-7.x-1.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -379,7 +379,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "A library of helpful tools by Merlin of Chaos.",
             "homepage": "https://www.drupal.org/project/ctools"
         },
@@ -388,12 +388,12 @@
             "version": "7.2.9",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/date",
+                "url": "https://git.drupal.org/project/date",
                 "reference": "e37620a69f76354a7f87dff47ed4010da891d105"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/date-7.x-2.9.zip",
+                "url": "https://ftp.drupal.org/files/projects/date-7.x-2.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -427,7 +427,7 @@
                     "dev-7.x-2.x": "7.2.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Makes date/time fields available.",
             "homepage": "https://www.drupal.org/project/date"
         },
@@ -436,12 +436,12 @@
             "version": "7.3.2",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/diff",
+                "url": "https://git.drupal.org/project/diff",
                 "reference": "adb43040a4e8f950ae604b7d3698f493075cb04f"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/diff-7.x-3.2.zip",
+                "url": "https://ftp.drupal.org/files/projects/diff-7.x-3.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -454,7 +454,7 @@
                     "dev-7.x-3.x": "7.3.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Show differences between content revisions."
         },
         {
@@ -487,12 +487,12 @@
             "version": "7.41.0",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/drupal",
+                "url": "https://git.drupal.org/project/drupal",
                 "reference": "69af622114261c1c13cf3c9b5ccc418cd036594b"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/drupal-7.41.zip",
+                "url": "https://ftp.drupal.org/files/projects/drupal-7.41.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -581,7 +581,7 @@
                     "dev-7.x-": "7.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Handles general site configuration for administrators.",
             "homepage": "https://www.drupal.org/project/drupal"
         },
@@ -625,12 +625,12 @@
             "version": "7.1.6",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/entity",
+                "url": "https://git.drupal.org/project/entity",
                 "reference": "724e7193419da3b7d3ca165025256371dd74eb4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/entity-7.x-1.6.zip",
+                "url": "https://ftp.drupal.org/files/projects/entity-7.x-1.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -646,7 +646,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Enables modules to work with any entity type and to provide entities."
         },
         {
@@ -654,12 +654,12 @@
             "version": "7.2.7",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/features",
+                "url": "https://git.drupal.org/project/features",
                 "reference": "a8b9dc5aa67b95fc3e95bb91ed0647baf66c1402"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/features-7.x-2.7.zip",
+                "url": "https://ftp.drupal.org/files/projects/features-7.x-2.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -672,7 +672,7 @@
                     "dev-7.x-2.x": "7.2.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Provides feature management for Drupal.",
             "homepage": "https://www.drupal.org/project/features"
         },
@@ -705,12 +705,12 @@
             "version": "7.2.0",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/module_filter",
+                "url": "https://git.drupal.org/project/module_filter",
                 "reference": "667c3ad945080427a91137dbc9a9666cffbc2415"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/module_filter-7.x-2.0.zip",
+                "url": "https://ftp.drupal.org/files/projects/module_filter-7.x-2.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -723,7 +723,7 @@
                     "dev-7.x-2.x": "7.2.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Filter the modules list."
         },
         {
@@ -731,12 +731,12 @@
             "version": "7.4.4",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/omega",
+                "url": "https://git.drupal.org/project/omega",
                 "reference": "59ad969c9f887850ab5108812370bbdba157ed4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/omega-7.x-4.4.zip",
+                "url": "https://ftp.drupal.org/files/projects/omega-7.x-4.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -752,7 +752,7 @@
                     "dev-7.x-4.x": "7.4.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "A powerful base theme framework.",
             "homepage": "https://www.drupal.org/project/omega"
         },
@@ -761,12 +761,12 @@
             "version": "7.3.5",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/panels",
+                "url": "https://git.drupal.org/project/panels",
                 "reference": "26c478e62e0177245aeab8d49448400d2eb688cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/panels-7.x-3.5.zip",
+                "url": "https://ftp.drupal.org/files/projects/panels-7.x-3.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -791,7 +791,7 @@
                     "dev-7.x-3.x": "7.3.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Core Panels display functions; provides no external UI, at least one other Panels module should be enabled."
         },
         {
@@ -799,12 +799,12 @@
             "version": "7.2.3",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/registry_rebuild",
+                "url": "https://git.drupal.org/project/registry_rebuild",
                 "reference": "5299e4d72bf09500e345aabb96ddb48385499ae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/registry_rebuild-7.x-2.3.zip",
+                "url": "https://ftp.drupal.org/files/projects/registry_rebuild-7.x-2.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -814,7 +814,7 @@
                     "dev-7.x-2.x": "7.2.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
@@ -826,12 +826,12 @@
             "version": "7.2.0",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/strongarm",
+                "url": "https://git.drupal.org/project/strongarm",
                 "reference": "895016eb5b99b9dc3e704f1b56e58808eedce30a"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/strongarm-7.x-2.0.zip",
+                "url": "https://ftp.drupal.org/files/projects/strongarm-7.x-2.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -845,7 +845,7 @@
                     "dev-7.x-2.x": "7.2.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Enforces variable values defined by modules that need settings set to operate properly."
         },
         {
@@ -885,12 +885,12 @@
             "version": "7.3.13",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/views",
+                "url": "https://git.drupal.org/project/views",
                 "reference": "5c2bfc9638e3e78023d1efb754b79d4ac994d0c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/views-7.x-3.13.zip",
+                "url": "https://ftp.drupal.org/files/projects/views-7.x-3.13.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -907,7 +907,7 @@
                     "dev-7.x-3.x": "7.3.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Create customized lists and queries from your database.",
             "homepage": "https://www.drupal.org/project/views"
         },
@@ -2040,12 +2040,12 @@
             "version": "7.3.1",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/backup_migrate",
+                "url": "https://git.drupal.org/project/backup_migrate",
                 "reference": "174bb364b71887a23140efea626d2843b57bd4cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/backup_migrate-7.x-3.1.zip",
+                "url": "https://ftp.drupal.org/files/projects/backup_migrate-7.x-3.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2058,7 +2058,7 @@
                     "dev-7.x-3.x": "7.3.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Backup the Drupal database and files or migrate them to another environment."
         },
         {
@@ -2066,12 +2066,12 @@
             "version": "7.2.4",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/coder",
+                "url": "https://git.drupal.org/project/coder",
                 "reference": "5d36c5d737114e0812653401d245dd69d586fc0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/coder-7.x-2.4.zip",
+                "url": "https://ftp.drupal.org/files/projects/coder-7.x-2.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2113,12 +2113,12 @@
             "version": "7.1.5",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/devel",
+                "url": "https://git.drupal.org/project/devel",
                 "reference": "becb6ca3ced27872b941b30ca308da03a209425a"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/devel-7.x-1.5.zip",
+                "url": "https://ftp.drupal.org/files/projects/devel-7.x-1.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2138,7 +2138,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Various blocks, pages, and functions for developers."
         },
         {
@@ -2146,12 +2146,12 @@
             "version": "dev-7.x-1.x",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/devel_themer.git",
+                "url": "https://git.drupal.org/project/devel_themer.git",
                 "reference": "cf347e10353260c45783ea0ac0ad9986f438ed8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/devel_themer-7.x-1.x-dev.zip",
+                "url": "https://ftp.drupal.org/files/projects/devel_themer-7.x-1.x-dev.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2166,7 +2166,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Essential theme API information for theme developers",
             "time": "2014-11-24 21:56:31"
         },
@@ -2175,7 +2175,7 @@
             "version": "v0.1.5",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/drupalextension.git",
+                "url": "https://git.drupal.org/project/drupalextension.git",
                 "reference": "da8a8468d3ca72eaef4d5b09f4929ea19f785eca"
             },
             "require": {
@@ -2223,12 +2223,12 @@
             "version": "7.1.0-rc2",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/mongodb",
+                "url": "https://git.drupal.org/project/mongodb",
                 "reference": "658b92f8b988fe159fc8bf0f66479d093dd6c09f"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/mongodb-7.x-1.0-rc2.zip",
+                "url": "https://ftp.drupal.org/files/projects/mongodb-7.x-1.0-rc2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2254,7 +2254,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Integration between Drupal and MongoDB."
         },
         {
@@ -2262,12 +2262,12 @@
             "version": "7.1.12",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/simplehtmldom",
+                "url": "https://git.drupal.org/project/simplehtmldom",
                 "reference": "27104c922d296c6c68ed395bdeea3dfc975b5366"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/simplehtmldom-7.x-1.12.zip",
+                "url": "https://ftp.drupal.org/files/projects/simplehtmldom-7.x-1.12.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2280,7 +2280,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "A wrapper module around the simplehtmldom PHP library at sourceforge."
         },
         {
@@ -2288,12 +2288,12 @@
             "version": "7.1.6",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/stage_file_proxy",
+                "url": "https://git.drupal.org/project/stage_file_proxy",
                 "reference": "b2a2fd714a3c6cb8499f29369cd3a6fb7db09f4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/stage_file_proxy-7.x-1.6.zip",
+                "url": "https://ftp.drupal.org/files/projects/stage_file_proxy-7.x-1.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2306,7 +2306,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "Proxies files from production server so you don't have to transfer them manually"
         },
         {
@@ -2314,12 +2314,12 @@
             "version": "7.1.0-beta3",
             "source": {
                 "type": "git",
-                "url": "http://git.drupal.org/project/XHProf.git",
+                "url": "https://git.drupal.org/project/XHProf.git",
                 "reference": "c91634308c223164cf96945b77737e2a6124d8b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "http://ftp.drupal.org/files/projects/XHProf-7.x-1.0-beta3.zip",
+                "url": "https://ftp.drupal.org/files/projects/XHProf-7.x-1.0-beta3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -2337,7 +2337,7 @@
                     "dev-7.x-1.x": "7.1.x-dev"
                 }
             },
-            "notification-url": "http://packagist.drupal-composer.org/downloads/",
+            "notification-url": "https://packagist.drupal-composer.org/downloads/",
             "description": "UI for xhprof runs."
         },
         {
