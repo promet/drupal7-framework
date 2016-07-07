@@ -14,7 +14,7 @@ $drush updb -y
 echo "Rebuilding registry and clearing caches."
 $drush rr
 echo "Enabling modules"
-$drush en "$(echo $DROPSHIP_SEEDS | tr ':' ' ')" -y
+$drush en $(echo $DROPSHIP_SEEDS | tr ':' ' ') -y
 $drush cc drush
 echo "Running manifests"
 $drush kw-m
