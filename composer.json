@@ -74,5 +74,8 @@
         "post-update-cmd": [
             "Drupal\\Tangler\\ScriptHandler::postUpdate"
         ]
+    },
+    "config":{
+        "secure-http": false
     }
 }
